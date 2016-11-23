@@ -31,10 +31,10 @@
     gitlab_rails['db_username'] = "{{ gitlab_db_username }}"
 {% endif %}
 {% if gitlab_db_password is defined -%}
-    gitlab_rails['db_password'] = {{ gitlab_db_password }}
+    gitlab_rails['db_password'] = "{{ gitlab_db_password }}"
 {% endif %}
 {% if gitlab_db_host is defined -%}
-    gitlab_rails['db_host'] = {{ gitlab_db_host }}
+    gitlab_rails['db_host'] = "{{ gitlab_db_host }}"
 {% endif %}
 {% if gitlab_db_port is defined -%}
     gitlab_rails['db_port'] = {{ gitlab_db_port }}
